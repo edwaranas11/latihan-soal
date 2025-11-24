@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Out UKPPPG Guru Tertentu - Game/Informatika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ujian Substantif PPG: Game/Informatika</h1>
+        <p class="subtitle">Total 65 Soal - Model Pembelajaran & Kompetensi Profesional</p>
+        
+        <div id="quiz-container">
+            <div id="questions-list"></div>
+            
+            <button id="submit-btn" onclick="submitQuiz()">Selesai & Cek Jawaban</button>
+            
+            <div id="results" class="results-hidden">
+                <h2>Hasil Ujian</h2>
+                <p>Skor Anda: <span id="score">0</span> / 65</p>
+                <div id="feedback"></div>
+                <button onclick="showAnswers()">Lihat Kunci Jawaban</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

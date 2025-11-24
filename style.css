@@ -1,0 +1,179 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f0fe;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    color: #004d99;
+    text-align: center;
+    border-bottom: 2px solid #004d99;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px 0 15px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-left: 5px solid #004d99;
+    border-radius: 5px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option-label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: block;
+}
+
+.option-label:hover {
+    background-color: #e6f7ff;
+    border-color: #004d99;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.controls {
+    text-align: right;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#next-button, #submit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+#prev-button {
+    background-color: #ccc;
+    color: #333;
+}
+
+#retry-button {
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+    padding: 12px 25px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Hasil */
+#results {
+    border-top: 2px dashed #004d99;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#score-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Review */
+.review-container {
+    text-align: left;
+}
+.review-question {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 5px solid;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.correct {
+    border-left-color: #28a745; /* Hijau */
+}
+
+.incorrect {
+    border-left-color: #dc3545; /* Merah */
+}
+
+.review-answer-user {
+    font-weight: bold;
+}
+
+.review-answer-correct {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.review-explanation {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 8px;
+    color: #555;
+    padding: 5px 0;
+    border-top: 1px dashed #eee;
+}
+
+/* Esai */
+#essay-container textarea {
+    width: 100%;
+    min-height: 250px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Styling untuk Feedback Instan */
+#feedback-instant {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none !important;
+}

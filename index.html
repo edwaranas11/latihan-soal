@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKMPPG PPLG Simulator Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Uji Kompetensi PPLG Interaktif</h1>
+        <p>Simulasi 65 Soal PG dan 1 Soal Esai. Skor PG akan dihitung otomatis.</p>
+        
+        <div id="quiz-container">
+            <h3 id="question-counter"></h3>
+            <div id="question-text"></div>
+            <div id="options-container" class="options-grid"></div>
+        </div>
+
+        <div id="essay-container" class="hidden">
+            <h2>Soal Subjektif (Esai)</h2>
+            <p><strong>Skenario:</strong> Anda adalah guru PPLG yang mengampu Pengembangan Game 2D (PjBL). Jelaskan strategi diferensiasi, *scaffolding* untuk Siswa A (coding lemah) dan Siswa B (desain lemah), serta rancangan penilaian proyek (bobot %).</p>
+            <textarea id="essay-answer" placeholder="Tulis jawaban esai Anda di sini (target 350-600 kata)..."></textarea>
+        </div>
+
+        <div class="controls">
+            <button id="prev-button" disabled>Sebelumnya</button>
+            <button id="next-button">Selanjutnya</button>
+            <button id="submit-button" class="hidden">Selesai & Nilai</button>
+        </div>
+        
+        <div id="results" class="hidden">
+            <h2>Hasil Ujian</h2>
+            <p id="score-text"></p>
+            <button id="retry-button">Coba Lagi</button>
+            <div id="review-container"></div>
+            <h3>Analisis Esai</h3>
+            <p>Jawaban esai Anda telah dicatat. Penilaian esai harus dilakukan secara manual oleh penilai.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
